@@ -4,7 +4,7 @@ def da_boas_vindas
   nome = gets.strip
 end
 
-def joga
+def joga(nome)
   palavra_secreta= sorteia_palavra_secreta
 
   erros = 0
@@ -14,10 +14,6 @@ def joga
   puts "Você ganhou #{pontos_ate_agora} pontos."
   
   puts 'Faça o seu chute para a palavra secreta'
-  chute = gets.strip
-
-  respota = chute.eq sorteia_palavra_secreta
-  puts resposta
 end 
 
 def sorteia_palavra_secreta
